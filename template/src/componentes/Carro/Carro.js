@@ -1,14 +1,16 @@
+import { CarroBox } from "./style.js"
+
 export function Carro(props) {
     return (
-      <div>
-        <h2>Meu carro</h2>
+      <CarroBox>
+        <h2>Volksvagem</h2>
         <ul>
           <li>Cor: {props.cor}</li>
           <li>Ano: {props.ano}</li>
-          <li>Flex: {props.flex ? "true" : "false"}</li>
+          <li>Flex: {props.flex? "Sim" : "Não"}</li>
           <li>Adicionado: {props.adicionadoPor}</li>
         </ul>
-      </div>
+      </CarroBox>
     );
   }
   
